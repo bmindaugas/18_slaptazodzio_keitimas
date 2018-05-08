@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta charset="UTF-8">
-        <title>slaptazodzio keitimas3</title>
-        <script>  
-            function onFormSubmit() {
-                var elem = document.querySelector('button');
-                elem.setAttribute('disabled', '');
-                var elementas = document.getElementById('p1');
-                elementas.innerHTML = "newPassword " + document.forms['forma']["newPassword"].value +
-                    ' ir confirmPassword ' + document.forms['forma']["confirmPassword"].value;
-                if(['forma']["newPassword"] == ['forma']["confirmPassword"]){
-                return alert ('okey');
-                }
-                else if (['forma']["newPassword"] !== ['forma']["confirmPassword"]); {
-                    return alert ('Slaptažodžiai nesutampa pakartokite dar kartą.')
-                }
-                
-                }
-               
-                
-        </script>
-    </head>
-    <body>
-        <form name="forma" action="" onsubmit="return onFormSubmit()">
-            <input name="newPassword" type="password">
-            <label>Įveskite naują slaptažodį</label>
-        <br>
-        <br>
-            <input name="confirmPassword" type="password">
-            <label>Pakartokite slaptažodį</label>
-            <br><br>
-            <button>Keisti slaptažodį</button>
-            
-        </form>
 
-        <div id="p1"></div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>slaptazodzio keitimas3</title>
+    <script>  
+        function onFormSubmit() {
+            var elem = document.querySelector('button');
+            elem.setAttribute('disabled', '');
+            var elementas = document.getElementById('p1');
+            elementas.innerHTML = "newPassword " + document.forms['forma']["newPassword"].value +
+                ' ir confirmPassword ' + document.forms['forma']["confirmPassword"].value;
+            if (['forma']["newPassword"] == ['forma']["confirmPassword"]) {
+                return alert('okey');
+            }
+            else if (['forma']["newPassword"] !== ['forma']["confirmPassword"]); {
+                return alert('Slaptažodžiai nesutampa pakartokite dar kartą.')
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="forma" action="" onsubmit="return onFormSubmit()">
+        <input name="newPassword" type="password">
+        <label>Įveskite naują slaptažodį</label>
+        <br>
+        <br>
+        <input name="confirmPassword" type="password">
+        <label>Pakartokite slaptažodį</label>
+        <br>
+        <br>
+        <button>Keisti slaptažodį</button>
+
+    </form>
+
+    <div id="p1"></div>
+</body>
+
 </html>
