@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>slaptazodzio keitimas5</title>
+    <style>
+        body {
+            background-color: rgb(147, 172, 160);
+            margin: 0;
+            padding: 15%;
+        }
+
+        .forma {
+            padding: 10% 0;
+            text-align: center;
+        }
+
+        #fonas {
+            border-radius: 25px;
+            background-color: rgb(77, 177, 130);
+            margin: auto;
+            width: 30vmax;
+            height: 100%;
+            border: solid rgb(8, 99, 46);
+            box-shadow: 5px 10px 18px #03361e;
+        }
+
+        input {
+            width: 15vw;
+            height: 10%;
+            border-radius: 7px;
+            background-color: rgb(186, 226, 203);
+        }
+
+        button {
+            width: 15vw;
+            height: 10%;
+            border-radius: 7px;
+            background-color: rgb(21, 83, 48);
+            color: aquamarine;
+        }
+
+        label {
+            color: rgb(14, 54, 31);
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fonas">
+        <form class="forma">
+            <label>Įveskite naują slaptžodį</label>
+            <br>
+            <br>
+            <input type="password" name="psw" id="psw">
+            <br>
+            <br>
+            <label>Pakartokite naują slaptžodį</label>
+            <br>
+            <br>
+            <input type="password" name="psw2" id="psw2">
+            <br>
+            <br>
+            <button onclick="submit()">Keisti</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
